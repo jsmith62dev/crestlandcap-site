@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crestland Capital</title>
     <style>
-        body {
+        /* Center the content vertically and horizontally */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
             background-color: #f8f8f8; /* Light gray background */
-            background-image: linear-gradient(135deg, #e0e0e0 10%, transparent 10%), 
-                              linear-gradient(225deg, #e0e0e0 10%, transparent 10%);
-            background-size: 20px 20px;
+            background-image: 
+                linear-gradient(45deg, #d1d1d1 25%, transparent 25%, transparent 75%, #d1d1d1 75%, #d1d1d1),
+                linear-gradient(45deg, #d1d1d1 25%, transparent 25%, transparent 75%, #d1d1d1 75%, #d1d1d1);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px; /* Creates the rhomboid effect */
+        }
+
+        /* Container for centering content */
+        .container {
+            text-align: center;
         }
 
         img {
             width: 250px; /* Adjust size as needed */
             height: auto;
             margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #333;
         }
 
         p {
@@ -43,7 +49,9 @@
     </style>
 </head>
 <body>
-    <img src="CCLogo.png" alt="Crestland Capital Logo">
-    <p><a href="mailto:info@crestlandcap.com">info@crestlandcap.com</a></p>
+    <div class="container">
+        <img src="CCLogo.png" alt="Crestland Capital Logo">
+        <p><a href="mailto:info@crestlandcap.com">info@crestlandcap.com</a></p>
+    </div>
 </body>
 </html>
