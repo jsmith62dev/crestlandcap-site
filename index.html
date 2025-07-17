@@ -22,45 +22,14 @@
       align-items: flex-start;
       justify-content: center;
       padding-top: 100px;
-    }
 
-    .background-shapes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-
-    .mountain-left {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      background-color: #255834;
-      clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    }
-
-    .mountain-right {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 50%;
-      height: 100%;
-      background-color: #317D47;
-      clip-path: polygon(0 0, 100% 100%, 0 100%);
-    }
-
-    .valley-divider {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 1.5%;
-      height: 100%;
-      background-color: #E0ECE5;
-      z-index: 1;
+      /* Superimposed triangle logo as background */
+      background-image: url('1856b4d2-49a8-4787-aefa-aa19543e143f.png');
+      background-size: 80vh auto; /* Large size with auto height */
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-blend-mode: multiply;
+      opacity: 1;
     }
 
     .logo {
@@ -91,11 +60,6 @@
 </head>
 <body>
   <div class="hero">
-    <div class="background-shapes">
-      <div class="mountain-left"></div>
-      <div class="mountain-right"></div>
-      <div class="valley-divider"></div>
-    </div>
     <div class="logo">
       <img src="Triangles.svg" alt="Crestland Capital Logo" />
       <div class="email">
