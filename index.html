@@ -5,48 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crestland Capital</title>
   <style>
-    html, body {
-      height: 100%;
+    body {
       margin: 0;
+      font-family: 'Neue Haas Grotesk Text Pro', Arial, sans-serif;
+      background-color: #E0ECE5;
+      color: #000;
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background-color: #E0ECE5;
       display: flex;
+      align-items: flex-start;
       justify-content: center;
-      /* Removed align-items: center to allow content toward top */
-      font-family: Arial, sans-serif;
-      background-color: #E5E5E5; 
+      padding-top: 100px;
     }
 
-    .container {
+    .background-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .triangle-1 {
+      position: absolute;
+      bottom: 0;
+      left: -10%;
+      width: 60%;
+      height: 100%;
+      background-color: #255834; /* primary brand color */
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      opacity: 0.85;
+    }
+
+    .triangle-2 {
+      position: absolute;
+      bottom: 0;
+      right: -15%;
+      width: 50%;
+      height: 100%;
+      background-color: #317D47; /* buttons / visual green */
+      clip-path: polygon(0 0, 100% 100%, 0 100%);
+      opacity: 0.7;
+    }
+
+    .accent-block {
+      position: absolute;
+      top: -5%;
+      right: -10%;
+      width: 45%;
+      height: 45%;
+      background-color: #D9B382; /* warm data highlight */
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 1;
       text-align: center;
-      margin-top: 80px; /* Adjust how far down from top */
     }
 
-    img {
-      width: 600px;
+    .logo img {
+      width: 400px;
       height: auto;
-      margin-bottom: 20px;
     }
 
-    p {
+    .email {
+      margin-top: 20px;
       font-size: 14px;
-      color: #555;
     }
 
-    a {
-      font-size: 12px;
-      color: #555; /* Subtle gray instead of bright blue */
+    .email a {
+      color: #255834;
       text-decoration: none;
     }
 
-    a:hover {
+    .email a:hover {
       text-decoration: underline;
-      color: #333; /* Darker on hover if desired */
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="CCLogo.png" alt="Crestland Capital Logo" />
-    <p><a href="mailto:info@crestlandcap.com">info@crestlandcap.com</a></p>
+  <div class="hero">
+    <div class="background-shapes">
+      <div class="triangle-1"></div>
+      <div class="triangle-2"></div>
+      <div class="accent-block"></div>
+    </div>
+    <div class="logo">
+      <img src="CCLogo.png" alt="Crestland Capital Logo" />
+      <div class="email">
+        <a href="mailto:info@crestlandcap.com">info@crestlandcap.com</a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
