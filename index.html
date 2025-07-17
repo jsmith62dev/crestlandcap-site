@@ -21,13 +21,12 @@
       height: 100vh;
       width: 100%;
       display: flex;
+      justify-content: flex-start;
       align-items: flex-start;
-      justify-content: center;
-      padding-top: 100px;
+      padding: 40px;
 
-      /* ✅ Fixed logo: centered and huge */
-      background-image: url('Triangles.svg'); /* Make sure this is the newly cropped file */
-      background-size: 300vmin auto; /* Giant and overflowing the viewport */
+      background-image: url('Triangles.svg');
+      background-size: 900vmin auto; 
       background-repeat: no-repeat;
       background-position: center center;
       background-blend-mode: multiply;
@@ -45,16 +44,16 @@
     .logo {
       position: relative;
       z-index: 2;
-      text-align: center;
+      text-align: left;
     }
 
     .logo img {
-      width: 400px;
+      width: 300px;
       height: auto;
     }
 
     .email {
-      margin-top: 20px;
+      margin-top: 8px;
       font-size: 14px;
     }
 
