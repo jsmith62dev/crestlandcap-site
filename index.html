@@ -4,68 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crestland Capital</title>
-
+  <meta name="description" content="Crestland Capital. Contact: info@crestlandcap.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
       font-family: 'Nunito Sans', sans-serif;
-      background-color: #ffffff;
+      background: #fff;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
+      align-items: flex-start;
+      min-height: 100vh;
       text-align: center;
     }
-
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
+      padding-top: 40px;
+      padding-left: 16px;
+      padding-right: 16px;
+      max-width: 720px;
+      width: 100%;
     }
-
-    .logo img {
-      max-width: 90%;
-      height: auto;
-    }
-
-    .main-logo {
-      max-width: 320px;
-    }
-
-    .icon-logo {
-      max-width: 200px;
-    }
-
-    .email {
-      font-size: 16px;
-    }
-
-    .email a {
-      color: #255834;
-      text-decoration: none;
-    }
-
-    .email a:hover {
-      text-decoration: underline;
-    }
+    .logo img { max-width: 90%; height: auto; }
+    .main-logo { max-width: 320px; }
+    .icon-logo { max-width: 200px; }
+    .email a { color: #255834; text-decoration: none; }
+    .email a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" data-nosnippet>
     <div class="logo">
-      <img src="Crestland Capital Text.svg" alt="Crestland Capital Logo" class="main-logo" />
+      <img src="Crestland Capital Text.svg" alt="Crestland Capital" class="main-logo" />
     </div>
-    <div class="logo">
-      <img src="Triangles.svg" alt="Triangle Logo Icon" class="icon-logo" />
-    </div>
+    <img src="Triangles.svg" alt="" class="icon-logo" aria-hidden="true" role="presentation" />
     <div class="email">
       <a href="mailto:info@crestlandcap.com">info@crestlandcap.com</a>
     </div>
   </div>
-
   <script type="text/javascript" id="hs-script-loader" async defer src="//js-na2.hs-scripts.com/243644337.js"></script>
 </body>
 </html>
